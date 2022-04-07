@@ -4,4 +4,6 @@ V 0.2 Minor adjustments to the layout and coloring.  Adjusted elements when hove
 
 V 0.3 Updated background colors to be more appealing to the eye.  Added images to all avatars. Adjusted size of buttons, search bar, avatars, and text.  Adjusted borders and added shadows of all grid elements inside the main body. For the next update, will add icons to the search bar, as well as links and semi-functionality.
 
+V 0.4 Updated colors and hover effects.  Started media query for tablet/smartphone screens. Updated font sizes and overflows for trending grid.
+
 # Dashboard
