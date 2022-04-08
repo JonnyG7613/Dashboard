@@ -6,4 +6,6 @@ V 0.3 Updated background colors to be more appealing to the eye.  Added images t
 
 V 0.4 Updated colors and hover effects.  Started media query for tablet/smartphone screens. Updated font sizes and overflows for trending grid.
 
+V 0.5 Mostly finished media queries.  Updated some of the responsiveness with font sizes and grid sizes in order to prevent overflow of grid items. Still need to add icons and possibly more *flair*.  Also possibly going to make project area contain actual projects with functional links to repositories.
+
 # Dashboard

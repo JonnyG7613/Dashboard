@@ -14,55 +14,6 @@ body {
 }
 
 /* =========
-    Sidebar
-   ========= */
-
-#sidebar {
-    position: sticky;
-    font-size: 1.5vw;
-    font-weight: bold;
-    background-color: var(--sidebar-bg-color);
-    grid-area: 1 / 1 / 4 / 2;
-    display: grid;
-    align-items: space-between;
-}
-
-.mainTasks {
-    list-style-type: none;
-    padding-left: 2.5vw;
-}
-
-.mainTasks li {
-    margin-bottom: 25px;
-    padding: 5px 0 5px 15px;
-}
-
-.mainTasks li:hover {
-    transform: scale(1.1);
-    border-radius: 20px;
-    background-color: var(--sidebarHover-bg-bolor);
-    width: 10vw;
-}
-
-.helpTasks {
-    list-style-type: none;
-    margin-bottom: 0;
-    padding-left: 2.5vw;
-}
-
-.helpTasks li {
-    margin-top: 25px;
-    padding: 5px 0 5px 15px;
-}
-
-.helpTasks li:hover {
-    transform: scale(1.1);
-    border-radius: 20px;
-    background-color: var(--sidebarHover-bg-bolor);
-    width: 10vw;
-}
-
-/* =========
     Header
    ========= */
 
@@ -125,6 +76,55 @@ body {
     border: none;
 }
 
+/* =========
+    Sidebar
+   ========= */
+
+#sidebar {
+    position: sticky;
+    font-size: 1.5vw;
+    font-weight: bold;
+    background-color: var(--sidebar-bg-color);
+    grid-area: 1 / 1 / 4 / 2;
+    display: grid;
+    align-items: space-between;
+}
+
+.mainTasks {
+    list-style-type: none;
+    padding-left: 2.5vw;
+}
+
+.mainTasks li {
+    margin-bottom: 25px;
+    padding: 5px 0 5px 15px;
+}
+
+.mainTasks li:hover {
+    transform: scale(1.1);
+    border-radius: 20px;
+    background-color: var(--sidebarHover-bg-bolor);
+    width: 10vw;
+}
+
+.helpTasks {
+    list-style-type: none;
+    margin-bottom: 5vh;
+    padding-left: 2.5vw;
+    align-self: end;
+}
+
+.helpTasks li {
+    margin-top: 25px;
+    padding: 5px 0 5px 15px;
+}
+
+.helpTasks li:hover {
+    transform: scale(1.1);
+    border-radius: 20px;
+    background-color: var(--sidebarHover-bg-bolor);
+    width: 10vw;
+}
 
 /* =========
     Projects
@@ -208,8 +208,8 @@ body {
 
 #trending>div>span {
     font-weight: bold;
-    padding-left: 2rem;
-    font-size: 1.5rem;
+    padding-left: 1rem;
+    font-size: 1rem;
 }
 
 /* =========
@@ -226,12 +226,92 @@ body {
     justify-content: center;
 }
 
+/* =========
+    Media Query
+   ========= */
+
 @media (max-width:1000px) {
+
+    body {
+        grid-template-rows: 30vh 80vh 45vh 35vh 5vh;
+        grid-template-columns: 1fr 5fr;
+    }
+
+    /* =========
+        Header
+       ========= */
+    #header {
+        grid-area: 1 / 2 / 2 / 3;
+        grid-template-rows: 1fr 1.5fr;
+    }
+
     #searchBar {
-        width: 25vw;
+        width: 45vw;
+        height: 2vh;
+    }
+
+    #lowerBarLeft {
+        align-self: center;
+    }
+
+    #lowerBarLeft>.name {
+        font-size: 1.5rem;
+    }
+
+    #lowerBarRight {
+        align-self: center;
     }
 
     #lowerBarRight button {
-        width: 40px;
+        width: 55px;
     }
+
+    /* =========
+        Sidebar
+       ========= */
+
+    #sidebar {
+        grid-area: 1 / 1 / 5 / 2;
+    }
+
+    .mainTasks {
+        padding-left: .5vw;
+    }
+
+    .helpTasks {
+        padding-left: .5vw;
+    }
+
+    /* =========
+        Projects
+       ========= */
+
+    #projects {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+
+    /* =========
+        Announcements
+       ========= */
+
+    #announcements {
+        grid-area: 3 / 2 / 4 / 3;
+    }
+
+    /* =========
+        Trending
+       ========= */
+
+    #trending {
+        grid-area: 4 / 2 / 5 / 3;
+    }
+
+    /* =========
+        Footer
+       ========= */
+
+    #footer {
+        grid-area: 5 / 1 / 6 / 4;
+    }
+
 }
