@@ -8,4 +8,6 @@ V 0.4 Updated colors and hover effects.  Started media query for tablet/smartpho
 
 V 0.5 Mostly finished media queries.  Updated some of the responsiveness with font sizes and grid sizes in order to prevent overflow of grid items. Still need to add icons and possibly more *flair*.  Also possibly going to make project area contain actual projects with functional links to repositories.
 
+V 0.6 Updated media queries.  Fixed proportions and margins when changing size of width of screen.  Updated colors slightly.  Still need to add icons.
+
 # Dashboard
